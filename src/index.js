@@ -5,7 +5,7 @@ class Geolocation extends React.Component {
     super(props);
     if (typeof window !== 'undefined') {
       if (!props.__map__) {
-        throw new Error('Heatmap has to be a child of Map component');
+        throw new Error('Geolocation has to be a child of Map component');
       } else {
         this.map = props.__map__;
         this.element = props.__ele__;
