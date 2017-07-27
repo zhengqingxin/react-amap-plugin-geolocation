@@ -24,7 +24,6 @@ class Geolocation extends React.Component {
   }
 
   resolveGeolocation(props){
-    console.log(props)
     if (this.geolocation) {
       return new Promise((resolve) => {
         resolve(this.geolocation);
